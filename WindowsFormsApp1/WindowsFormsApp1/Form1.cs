@@ -16,5 +16,21 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void tbxSaisie_TextChanged(object sender, EventArgs e)
+        {
+            lblResuét.Text = tbxSaisie.Text; 
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            lblResuét.Text = "";
+            tbxSaisie.Text = "";
+        }
     }
 }

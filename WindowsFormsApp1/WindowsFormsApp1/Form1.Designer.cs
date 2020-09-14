@@ -60,6 +60,7 @@
             this.tbxSaisie.Name = "tbxSaisie";
             this.tbxSaisie.Size = new System.Drawing.Size(285, 20);
             this.tbxSaisie.TabIndex = 3;
+            this.tbxSaisie.TextChanged += new System.EventHandler(this.tbxSaisie_TextChanged);
             // 
             // btnDelete
             // 
@@ -69,6 +70,7 @@
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Effacer";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnQuit
             // 
@@ -78,6 +80,7 @@
             this.btnQuit.TabIndex = 5;
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // lblResuét
             // 
@@ -100,6 +103,7 @@
             this.Controls.Add(this.lblCopie);
             this.Controls.Add(this.lblSaise);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
